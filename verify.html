@@ -766,6 +766,25 @@
         }
 
         @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                position: absolute;
+                top: 100%;
+                left: 0;
+                right: 0;
+                background: rgba(10, 14, 39, 0.98);
+                flex-direction: column;
+                padding: 30px;
+                gap: 20px;
+                border-top: 1px solid rgba(102, 126, 234, 0.2);
+            }
+
+            .nav-links.active {
+                display: flex;
+            }
+  .menu-toggle {
+                display: flex;
+            }
             .step-content {
                 padding: 30px 20px;
             }
@@ -1249,4 +1268,5 @@
         });
     </script>
 </body>
+
 </html>
